@@ -1,13 +1,14 @@
 package com.Todo.Todolist.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import java.util.Optional;
 
-import com.Todo.Todolist.repository.TodoRepository;
+import com.Todo.Todolist.entity.Todo;
 
-@Service
-public class TodoService {
-	@Autowired
-	private TodoRepository todoRepository;
-	
+
+public interface TodoService {
+	public Iterable<Todo> findAll();
+	public Optional<Todo> findById(Long id);
+	public String deleteById(Long id);
+	public Todo saveTodo(Todo todo);
+	public Todo updateStatus(Long id);
 }
