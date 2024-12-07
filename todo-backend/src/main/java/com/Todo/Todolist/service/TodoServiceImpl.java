@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.Todo.Todolist.dto.TodoNameDTO;
 import com.Todo.Todolist.entity.Todo;
 import com.Todo.Todolist.repository.TodoRepository;
 
@@ -34,4 +35,5 @@ public class TodoServiceImpl implements TodoService{
 		todo.setStatus(!todo.getStatus());
 		return todoRepository.save(todo);
 	}
+
 }

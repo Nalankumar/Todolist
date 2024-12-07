@@ -22,6 +22,7 @@ class TodoService{
 	setStatus(id){
 		return axios.put(`${url}/${id}`);
 	}
+
 }
 
 export default new TodoService();

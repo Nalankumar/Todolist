@@ -2,7 +2,8 @@ import {useState} from 'react';
 import TodoService from './../services/TodoService.js'
 export default function PostForm({getTodos}){
 	const [todoName, setTodoName] = useState("");
-	const handleSubmit = ()=>{
+	const handleSubmit = (event)=>{
+		event.preventDefault();
 		const todo = {
 		    		name: todoName,
 		    		status: false
@@ -17,7 +18,7 @@ export default function PostForm({getTodos}){
 
 	return(
 		<>
-		    <form onSubmit={handleSubmit}>
+		    <form className="p-4" onSubmit={handleSubmit}>
 				<label
 				  htmlFor="todo"
 				  className="relative block overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
@@ -29,7 +30,10 @@ export default function PostForm({getTodos}){
 				    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
 				  	onChange={(e)=>{
 				  		setTodoName(e.target.value);
-				  	}}
+				  	}
+
+				  }
+				  required
 				  />
 
 				  <span
