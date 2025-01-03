@@ -1,8 +1,9 @@
-# Todolist Front End
+# Todolist Frontend
 
 This folder holds the front-end section of the to-do list application, providing the user interface and client-side functionality for task management.
 
 ## Tech Stack
+
 - React
 - TailwindCSS
 - Vite
@@ -90,8 +91,4 @@ todo-frontend
 
 - Ensure all environment variables are configured in a `.env` file if required.
 - Refer to the [Vite documentation](https://vitejs.dev/) for advanced configurations.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
