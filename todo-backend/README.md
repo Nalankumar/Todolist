@@ -1,4 +1,10 @@
-# Todolist
+# Todolist Backend
+This folder holds the back-end section of the to-do list application, providing the server-side functionality and database services for task management.
+
+## Tech Stack
+- SpringBoot
+- MySQL
+  
 ## Prerequisites
 1. **Ensure Maven is installed:**
    Verify Maven is installed and added to the `PATH`.
@@ -74,7 +80,6 @@
 3. **Run the Project:**
    - Right-click the main class file and select **Run File**.
 
-
 Each IDE has specific Maven support, but these general steps should work.
 
 ### Steps to run the project in CMD
@@ -104,6 +109,3 @@ Each IDE has specific Maven support, but these general steps should work.
 4. **Verify Installation:**
    - Check the `target` directory in your project for the generated files (e.g., `.jar` or `.war`).
    - Verify the artifact is installed in your local Maven repository (`~/.m2/repository`).
-
-
-     
