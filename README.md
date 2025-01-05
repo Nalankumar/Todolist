@@ -1,3 +1,4 @@
+![GitHub License](https://img.shields.io/github/license/Nalankumar/Todolist)
 # Todolist
 TodoList is a full-stack application designed for efficient task management. It allows users to create, update, and organize tasks seamlessly, ensuring productivity. Built with robust front-end and back-end integration, it stores all task data securely in an SQL database, enabling reliable access and management of tasks anytime, anywhere.
 
