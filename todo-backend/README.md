@@ -1,6 +1,11 @@
 # Todolist Backend
 This folder holds the back-end section of the to-do list application, providing the server-side functionality and database services for task management.
 
+## Table of Contents
+- [Tech Stack](#tech-stack)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+
 ## Tech Stack
 - SpringBoot
 - MySQL
@@ -19,6 +24,22 @@ This folder holds the back-end section of the to-do list application, providing 
    Open Command Prompt and navigate to the directory containing your Maven project (`pom.xml` file).
 
 ## Installation
+
+### Setting up Database
+#### 1. Create the Database
+- Open your MySQL client and create the database and tables. Example:
+  ```sql
+  CREATE DATABASE Todolist;
+  USE Todolist;
+  ```
+#### 2. Import Queries from a SQL File
+
+Import the sql file from the directory using the command line:
+```
+mysql -u username -p Todolist < path_to_sqlfile/todolist.sql
+```
+Replace username with your MySQL username and path_to/todolist.sql with the path to the SQL file.
+
 ### Steps to Run the project in Popular IDEs
 #### **1. IntelliJ IDEA**
 1. **Import the Maven Project:**
